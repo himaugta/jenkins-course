@@ -24,6 +24,7 @@ node {
     def content = '${JELLY_SCRIPT,template="html"}'
 
     // send email
+    println('Email Part coming!')
     emailext(body: 'Hello !!', compressLog: true, subject: 'Sending file via Jenkins', to: 'himanshu.nagpal@mastercard.com', attachLog: true )
 
     //if(to != null && !to.isEmpty()) {
